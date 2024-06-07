@@ -1,0 +1,108 @@
+body{
+    background-image: url('timeclock\ bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    height: 50%;
+    width: 40%;
+    border: 2px solid white;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 18px 0 rgba(255, 255, 255, 0.4);
+}
+
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 40%;
+    border: 1px solid white;
+    color: #8c52ff;
+    font-size: 2.5rem;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+
+}
+.buttons{
+    display: flex;
+    width: 60%;
+    /* border: 1px solid white; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.start,.pause,.reset{
+    width:30%;
+    padding-block: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
+button:hover{
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
+
+.start{
+    background-color: rgb(29, 226, 29);
+}
+.pause{
+    background-color: red;
+}
+.reset{
+    background-color: rgb(192, 192, 25);
+}
+
+@media screen and (max-width: 920px) {
+    .timer{
+        width: 80%;
+        height: 40%;
+        font-size: 2rem;
+    }
+    .start,.pause,.reset{
+        width:30%;
+        font-size: 1rem;
+    }
+    .buttons{
+        width: 80%;
+    }
+    .container{
+        height: 60%;
+        width: 60%;
+        gap: 32px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .timer{
+        width: 80%;
+        height: 30%;
+        font-size: 1.5rem;
+    }
+    .start,.pause,.reset{
+        width:30%;
+        font-size: 0.8rem;
+    }
+    .buttons{
+        width: 80%;
+    }
+    .container{
+        height: 60%;
+        width: 80%;
+        gap: 32px;
+    }
+}
